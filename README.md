@@ -1,23 +1,6 @@
 Gnome Shell Extension: Gnome Global Application Menu Version: v0.7-Beta
 
-Last update: 16 April 2017
-
 ***
-Special thanks to:
---------------
-
-- rgcjonas             (https://github.com/rgcjonas)               The initial code.
-- Canonical devs       (http://www.canonical.com/)                 The protocols and patches.
-- Cinnamon devs        (https://github.com/linuxmint/Cinnamon)     The support (specially: https://github.com/mtwebster).
-- Gnome Shell devs     (https://github.com/GNOME/gnome-shell)      The support.
-- rilian-la-te         (https://github.com/rilian-la-te)           Understand and fix a lot of things.
-- collinss             (https://github.com/collinss)               Has helped fix the behavior of firefox and thunderbird.
-
-Author of language translation:
---------------
-- Croatian(Hr):     gogo (trebelnik2@gmail.com)
-- English(En):      Lester Carballo Pérez(lestcape@gmail.com)
-- Spanish(Es):      Lester Carballo Pérez(lestcape@gmail.com)
 
 --------------
 ![](https://raw.githubusercontent.com/lestcape/Gnome-Global-AppMenu/master/gnomeGlobalAppMenu%40lestcape/Capture.png)
@@ -31,24 +14,6 @@ This extension integrates the Ubuntu-Unity Application Menu (Global Menu) suppor
 It's used the same idea of the Gnome Shell extension made by rgcjonas:
 
 https://github.com/rgcjonas/gnome-shell-extension-appindicator
-
-Known issues (Try at your own risk):
---------------
-* Not all apps are tested and then the extension could takes ages to load and can freeze Gnome Shell forever.
-* There are some unsupported apps that can not be integrate into the extension, like Blender, as has his own GUI toolkit.
-* For some untested applications, it is possible a failure caused by a bug in the extension. Please, report it if is working in Unity.
-* Some Gnome applications like Nautilus, remove the possibility to export the menu in recently versions (you can use instead an alternative applications).
-
-Experimental JAyatana support (try at your own risk):
---------------
-JAyatana it's buggy and was removed intentional from Intellij Idea, Ubuntu 15.04 and others.
-
-Currently you can use the JAyatana support as a decision inside the extension. This will work for some java applications only and for others with several problems or also will not work. Some time you will need restart the Shell to see the menu, like for example with JDownloader. 
-
-I really don't know if this is caused by an improperly handled of the JavaEmbeddedFrame by Mutter (The Gnome Shell Windows Manager), if it's an specific behavior/bugs of JAyatana or whatever. What occurs is that some time the JavaEmbeddedFrame can steal the menu to the main windows and some time not. So, a Shell restart after opening JDownloader would fix the problem in most of cases, in others is possible you will need to kill the JDownloader process and then opening the application again. To remove the experimental tag, the JAyatana project will need to implement this stuff at less:
-
-1. Use the same sender in the DbusMenu implementation for the same windows and not a new one.
-2. Use the same menu item id for all layout-updates and not a new one.
 
 This is because force to reload all items and this is pretty hard for javascript.
 
@@ -104,23 +69,6 @@ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Gen
 
 You should have received a copy of the GNU General Public License along with this program.
 If not, see http://www.gnu.org/licenses/.
-
-Guidelines for bug reports
---------------
-Unfortunately, this extension is not completely bug free and will probably never be.
-In order to successfully resolve the issues you need to provide some data:
-
-* Your distribution, Shell version and extension version (something like "latest git" or "latest from spices" is sufficient).
-* Instructions how to reproduce it. **This is the single most important point**. Bugs that [can't be reproduced](http://xkcd.com/583/) can't be fixed either.
-* Bugs which don't provide the necessary information may be closed as "invalid" without prior notice.
-
-To report bugs, request new features and make suggestions, please visit:
-
-https://github.com/lestcape/Gnome-Global-AppMenu/issues
-
-You can also send us a pull request:
-
-https://github.com/lestcape/Gnome-Global-AppMenu/pulls
 
 Installation instructions:
 --------------
